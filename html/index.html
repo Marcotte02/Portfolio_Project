@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connor Marcotte Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Connor Marcotte</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing My Skills, Projects, and Achievements</p>
+        <a href="#work" class="btn btn-primary btn-view-project">Explore My Work</a>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+          <!-- Headshot -->
+          <div class="col-md-4 text-center headshot">
+            <img
+              src="../images/Headshot.jpeg"
+              alt="Headshot Picture"
+              class="img-fluid rounded-circle shadow-lg"
+              style="max-width: 250px"
+            />
+          </div>
+    
+          <!-- About Text -->
+          <div class="col-md-8">
+            <p class="about-text">
+              Hello! I'm <strong>Connor Marcotte</strong>, a software developer
+              student currently learning at <strong>St. Clair College</strong>. I
+              specialize in both front-end and back-end development and have a
+              passion for creating innovative solutions. I'm always seeking to
+              learn new skills and work on exciting projects.
+            </p>
+    
+            <!-- Skills Section with Font Awesome Icons -->
+            <div class="skills mt-4">
+              <h4>Skills</h4>
+              <div class="d-flex flex-wrap align-items-center">
+                <div class="skill-icon">
+                  <i class="fab fa-html5"></i>
+                  <p>HTML5</p>
+                </div>
+                <div class="skill-icon">
+                  <i class="fab fa-css3-alt"></i>
+                  <p>CSS3</p>
+                </div>
+                <div class="skill-icon">
+                  <i class="fab fa-js"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div class="skill-icon">
+                  <i class="fab fa-php"></i>
+                  <p>PHP</p>
+                </div>
+                <div class="skill-icon">
+                  <i class="fab fa-angular"></i>
+                  <p>Angular</p>
+                </div>
+                <div class="skill-icon">
+                  <i class="fas fa-database"></i>
+                  <p>MySQL</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Social Links -->
+            <p class="mt-4">Check out my other socials:</p>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/connormarcotte/"
+                target="_blank"
+                class="me-3 social-icon"
+              >
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a
+                href="https://github.com/Marcotte02"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Samples -->
+    <section id="work" class="py-5 bg-light">
+      <div class="container">
+        <h2>Work Samples</h2>
+        <div class="row">
+          <!-- Inventory Management Site -->
+          <div class="col-md-4 work-sample text-center">
+            <img
+              src="../images/Login_Page.png"
+              alt="Login Screen for Inventory Management"
+              class="img-fluid"
+            />
+            <h5>Inventory Management Site</h5>
+            <p>
+              Champion’s Choice Daily Depot is a grocery store management
+              application to streamline inventory tracking, supplier
+              relationships, and product listings through a clean, modular
+              codebase and a user-friendly dashboard.
+            </p>
+            <p>Uses: JavaFX, MySQL</p>
+            <a
+              href="https://github.com/W0685475/Champion-s-Choice-Daily-Depot/tree/main"
+              class="btn btn-primary btn-view-project"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+
+          <!-- Auction Site -->
+          <div class="col-md-4 work-sample text-center">
+            <img
+              src="../images/Auction.png"
+              alt="Auction Home Page"
+              class="img-fluid"
+            />
+            <h5>Auction Site</h5>
+            <p>
+              A fake auction system where users can place bids on items, with
+              the highest bidder and seller receiving personalized emails.
+              Includes payment option with PayPal.
+            </p>
+            <p>Uses: PHP, HTML, CSS, MySQL</p>
+            <a
+              href="https://cmarcotte.scweb.ca/MAD303/auction/"
+              class="btn btn-primary btn-view-project"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-4 work-sample text-center">
+            <img
+              src="../images/Blackjack.png"
+              alt="Project 3"
+              class="img-fluid"
+            />
+            <h5>Blackjack Game</h5>
+            <p>
+              A Blackjack game where the user can play hands, save their
+              progress, and try to reach the winning score of $1000!
+            </p>
+            <p>Uses: JavaFX</p>
+            <a
+              href="https://github.com/Marcotte02/Blackjack_Game/tree/main"
+              class="btn btn-primary btn-view-project"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="py-5">
+      <div class="container">
+        <h2>Resume</h2>
+        <p>View my resume below or download the PDF version:</p>
+        <div class="row">
+          <!-- Resume Preview -->
+          <div class="col-md-6 text-center">
+            <img
+              src="../images/Resume.png"
+              alt="Resume Preview"
+              class="img-fluid border rounded resume-preview"
+              data-bs-toggle="modal"
+              data-bs-target="#resumeModal"
+            />
+            <p class="mt-2">Click the image to enlarge</p>
+            <!-- Download Button -->
+            <a
+              href="../Resume_ConnorMarcotte.pdf"
+              class="btn btn-primary mt-3 btn-view-project"
+              target="_blank"
+            >
+              Download Resume
+            </a>
+          </div>
+
+          <!-- Key Highlights -->
+          <div class="col-md-6">
+            <h3>Key Highlights</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>Education:</strong> Computer Programming Diploma From Saint Clair College
+              </li>
+              <li class="list-group-item">
+                <strong>Experience:</strong> 2+ years in Web Development
+              </li>
+              <li class="list-group-item">
+                <strong>Skills:</strong> HTML, CSS, JavaScript, PHP, Angular,
+                MySQL
+              </li>
+              <li class="list-group-item">
+                <strong>Projects:</strong> Inventory Management App, Auction
+                Platform, Personal Portfolio, Mock Websites, Etc!
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resume Modal -->
+        <div
+          class="modal fade"
+          id="resumeModal"
+          tabindex="-1"
+          aria-labelledby="resumeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="../images/Resume.png"
+                  alt="Resume Image"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <h6>Please feel free to reach out to me using the form below!</h6>
+        <form id="contactForm" method="POST" action="send_email.php" novalidate>
+          <!-- Name Field -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="fas fa-envelope"></i
+              ></span>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="fas fa-comment"></i
+              ></span>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-view-project">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; Connor Marcotte - Portfolio</p>
+        <div>
+          <a
+            href="https://github.com/your-profile"
+            target="_blank"
+            class="me-3"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+
+        // Handle form submission
+        form.addEventListener("submit", function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          // Add Bootstrap's validation class to show errors after submission attempt
+          form.classList.add("was-validated");
+        });
+      });
+    </script>
+  </body>
+</html>

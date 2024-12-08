@@ -1,0 +1,343 @@
+/* ================================================
+   TABLE OF CONTENTS
+   =================================================
+   1. General Settings
+      - Fonts and Colors
+   2. Navbar
+   3. Hero Section
+   4. About Section
+      - Headshot Styling
+      - Skills Section
+   5. Work Samples
+   6. Resume Section
+   7. Contact Section
+      - Input Fields
+   8. Buttons
+      - Project Buttons
+   9. Footer
+   10. Skill Icons
+       - Icon Colors
+   11. Media Queries
+   ================================================= */
+
+/* ================================================
+   COLOR GUIDE
+   =================================================
+   Dark Blue (Primary):    #001f3f
+   Sky Blue:               #0056b3
+   White:                  #ffffff
+   Light Gray (Borders):   #ced4da
+   JavaScript Yellow:      #f7df1e
+   Angular Red:            #dd0031
+   CSS Blue:               #1572b6
+   PHP Purple:             #8993be
+   MySQL Teal:             #00758f
+   HTML Orange:            #e34f26
+   ================================================= */
+
+/* ================================================
+   1. General Settings
+   ================================================= */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #001f3f;
+}
+
+.btn,
+.navbar-brand,
+.about-text strong {
+  font-family: "Lora", serif;
+}
+
+/* ================================================
+     2. Navbar
+     ================================================= */
+
+.navbar {
+  background-color: #001f3f;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff;
+}
+
+.navbar .nav-link:hover {
+  color: #0056b3;
+}
+
+/* ================================================
+     3. Hero Section
+     ================================================= */
+
+.hero-section {
+  background: url("../images/Hero_Background.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ================================================
+     4. About Section
+     ================================================= */
+
+/* Headshot styling */
+
+#about img {
+  border: 5px solid #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-text strong {
+  font-family: "Lora", serif;
+  font-weight: 700;
+}
+
+#about a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  color: #001f3f;
+  transition: color 0.3s ease;
+}
+
+#about a:hover {
+  color: #0056b3;
+}
+
+/* Skills Section */
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 80px;
+  text-align: center;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.5s ease;
+}
+
+.skill-icon i {
+  color: #001f3f;
+  margin-bottom: 5px;
+}
+
+.skill-icon p {
+  font-size: 0.9rem;
+  color: #343a40;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+.skill-icon:hover i {
+  color: var(--icon-hover-color);
+}
+
+/* Individual Icon Colors */
+
+.skill-icon:nth-child(1) i:hover {
+  color: #e34f26;
+} /* HTML5 - Orange */
+.skill-icon:nth-child(2) i:hover {
+  color: #1572b6;
+} /* CSS3 - Blue */
+.skill-icon:nth-child(3) i:hover {
+  color: #f7df1e;
+} /* JavaScript - Yellow */
+.skill-icon:nth-child(4) i:hover {
+  color: #8993be;
+} /* PHP - Purple */
+.skill-icon:nth-child(5) i:hover {
+  color: #dd0031;
+} /* Angular - Red */
+.skill-icon:nth-child(6) i:hover {
+  color: #00758f;
+} /* MySQL - Teal */
+
+/* ================================================
+     5. Work Samples
+     ================================================= */
+
+.work-sample img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+#work h2 {
+  font-family: "Poppins", sans-serif;
+  color: #001f3f;
+}
+
+/* ================================================
+     6. Resume Section
+     ================================================= */
+
+#resume img {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#resume img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#resume .list-group-item {
+  border: none;
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #001f3f;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================================
+     7. Contact Section
+     ================================================= */
+
+#contactForm input,
+#contactForm textarea {
+  border: 2px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #001f3f;
+  box-shadow: 0 0 8px rgba(0, 31, 63, 0.5);
+  outline: none;
+}
+
+/* ================================================
+     8. Buttons
+     ================================================= */
+
+.btn-view-project {
+  background-color: #001f3f;
+  color: #ffffff;
+  border: 2px solid #001f3f;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-view-project:hover {
+  background-color: #ffffff;
+  color: #001f3f;
+  border: 2px solid #001f3f;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-view-project:active {
+  transform: scale(1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================================
+     9. Footer
+     ================================================= */
+
+footer {
+  background-color: #001f3f;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0056b3;
+}
+
+/* ================================================
+     10. Media Queries
+     ================================================= */
+
+@media (max-width: 768px) {
+  .work-sample {
+    margin-bottom: 20px;
+  }
+
+  .download-resume {
+    margin-top: 20px;
+  }
+
+  .headshot {
+    margin-bottom: 20px;
+  }
+}
